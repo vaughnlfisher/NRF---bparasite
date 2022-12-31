@@ -1,0 +1,20 @@
+esphome:
+  name: parahub
+  platform: ESP32
+  board: lolin32
+
+esp32_ble_tracker:
+
+sensor:
+  - platform: b_parasite
+    mac_address: "f0:ca:f0:ca:01:01"
+    humidity:
+      name: "bprst1 humidity"
+    temperature:
+      name: "bprst1 temperature"
+    moisture:
+      name: "bprst1 moisture"
+    battery_voltage:
+      name: "bprst1 battery_voltage"
+
+logger:
